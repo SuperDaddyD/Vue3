@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Chevy",
+    "price": 15000,
+    "year": 2015,
+    "contact":{
+      "dealer":"Demitri Faulk",
+      "number":"902-654-9029"
+    },
+    "img": "https://shiftcars1.imgix.net/content/con14EmbHdAu8E3O1qamAA3g6oeYzaErtxV0I7EgISRRe92cfQf2y8?fit=max&w=450&auto=format%2Ccompress"
+  },
+  {
+    "id": 2,
+    "name": "Bently",
+    "price": 215000,
+    "year": 2015,
+    "contact":{
+      "dealer":"Patrick McDoogal",
+      "number":"682-854-5023"
+    },
+    "img": "https://www.primemotorz.com/imagetag/552/main/l/Used-2007-Bentley-Continental-GT-COUPE-AWD-GT-1604683881.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ford",
+    "price": 5000,
+    "year": 2005,
+    "contact":{
+      "dealer":"Bankem Smurf",
+      "number":"502-654-6029"
+    },
+    "img": "https://vimg.remorainc.com/kp3/1fmcu0e75beklrv79/2022-ford-f150-lariat-star-white-metallic-tri-coat-0.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Land Rover",
+    "price": 85000,
+    "year": 2019,
+    "contact":{
+      "dealer":"Harvey Schroder",
+      "number":"772-564-2029"
+    },
+    "img": "https://content-images.carmax.com/qeontfmijmzv/6Yd7rAjmL3ce4ZODF3DnFi/8c10693b1715c49d332eccc4f25a8291/landrover.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Nissan",
+    "price": 25000,
+    "year": 2019,
+    "contact":{
+      "dealer":"Pauley Giordono",
+      "number":"554-334-1026"
+    },
+    "img": "https://listings-prod.tcimg.net/listings/350291/52/15/JN1AZ34E95M651552/F7WMPKY5IIXI4LPORG3OL4IY2M-cr-360.jpg"
+  }
+]
