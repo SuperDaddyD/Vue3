@@ -1,6 +1,6 @@
 <script setup>
 import {defineProps,defineEmits} from "vue"
-const {question,numberOfCorrectAnswers} = defineProps(["question","numberOfCorrectAnswers"])
+const {question} = defineProps(["question"])
 const emit = defineEmits(["selectOption"])
 
 const emitSelectedOption =(isCorrect)=>{

@@ -24,6 +24,7 @@ const onOptionSelected =(isCorrect)=>{
       numberOfCorrectAnswers.value++
    
    }
+   //CHECK TO SEE IF IT IS THE LAST QUESTION IN ARRAY
    if(quiz.questions.length - 1  === currentQuestionIndex.value  ){
     showResults.value = true
    }
@@ -41,6 +42,7 @@ console.log("QUIZ QUESTIONS",quiz.questions.length)
 
 // console.log("CHECK THIS-->",currentQuestionIndex.value)
 
+//Computed is caching ONLY RERENDER WHEN 'currentQuestionIndex.value' CHANGES
 const questionsAnswered = computed(()=>{
     return `${currentQuestionIndex.value}/${quiz.questions.length}`
 })
@@ -58,6 +60,9 @@ const changeResult = ()=>{
     showResults.value =!showResults.value
 }
 
+const test = (h)=>{
+  console.log('This is h -->',h)
+}
 </script>
 
 <template>
@@ -66,12 +71,12 @@ const changeResult = ()=>{
     <div>
       <Question 
       v-if="!showResults"
-        :numberOfCorrectAnswers="numberOfCorrectAnswers"
+        
        @selectOption="onOptionSelected"
         :question="quiz.questions[currentQuestionIndex]" 
          />
         <Result :quizQuestion="quiz.questions.length" :numberOfCorrectAnswers="numberOfCorrectAnswers"  :currentQuestionIndex="currentQuestionIndex.value " v-else />
     </div>
-    <button v-if="!showResults" @click="c++">Next Question</button>
+    <button v-if="!showResults" @click="(c)=>test(c)">Next Question</button>
   </div>
 </template>
