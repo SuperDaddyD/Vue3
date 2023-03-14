@@ -10,7 +10,8 @@ const search = ref("")
 //THIS IS THE FILTER FUNCTIONALITY!!
 //WATCH IS A LISTENER. LISTENING TO ANY CHANGE OF SEARCH PROP
 watch(search,()=>{
-  quizes.value = q.value.filter((quiz)=> quiz.name.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))
+  console.log('q-->',q)
+  quizes.value = q.filter((quiz)=> quiz.name.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))
 })
 
 </script>

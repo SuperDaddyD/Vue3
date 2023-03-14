@@ -72,6 +72,6 @@ const changeResult = ()=>{
          />
         <Result :quizQuestion="quiz.questions.length" :numberOfCorrectAnswers="numberOfCorrectAnswers"  :currentQuestionIndex="currentQuestionIndex.value " v-else />
     </div>
-    <button v-if="!showResults" @click="currentQuestionIndex++">Next Question</button>
+    <button v-if="!showResults" @click="c++">Next Question</button>
   </div>
 </template>
